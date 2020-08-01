@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overwatch Hero Survey (September 2019)</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="content">
+       <h1 id="overwatch-hero-survey-september-2019">Overwatch Hero Survey (September 2019)</h1>
+<p>Firstly, thank you to the 1200 players from <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> who took the time to fill out the survey.</p>
+
+<p><strong>Links</strong></p>
+<ul>
+  <li>Responses are based on this <a href="https://forms.gle/Rgmn2CdViBApsbP6A">Google Forms survey</a></li>
+  <li>The raw results can be found in this <a href="https://docs.google.com/spreadsheets/d/1Ax1unE4I2DWW3iz2Bv4c24FTUx_qxNPwrKGZ6LGNux0">Google Sheets spreadsheet</a></li>
+  <li>Original <a href="https://www.reddit.com/r/Competitiveoverwatch/comments/d9cmo9/5_minute_overwatch_hero_survey_fun_vs_perception/">reddit post</a></li>
+  <li>The code used to generate the results can be found on <a href="https://github.com/marksimpson82/overwatch_survey">github</a>.</li>
+</ul>
+
+<p>I encourage folk to check out the <a href="https://github.com/marksimpson82/overwatch_survey">github repo</a> and examine/fork &amp; modify the code.</p>
+
+<h2 id="caveats">Caveats</h2>
+<ol>
+  <li>I’m only human; the survey and analysis may contain bias or errors.</li>
+  <li>The survey might tell us <em>what</em> people think, but it doesn’t really tell us <em>why</em>.</li>
+  <li>It also lacks a little context: e.g. do people find hero X unfun to play against because the hero’s kit is inherently flawed, or is it because of the meta?</li>
+</ol>
+
+<h2 id="goals">Goals</h2>
+<p>I’m curious about how the community perceives hero fun (playing as and against a specific hero) vs. balance and whether we can spot any patterns in the responses.</p>
+
+<h2 id="future-survey-improvements">Future survey improvements</h2>
+<p>If I run the survey again in future, I plan to:</p>
+<ul>
+  <li>Collect platform (PC, PC, Xbox).</li>
+  <li>Collect whether people enjoy playing <em>with</em> a hero on their team.</li>
+  <li>Collect general comments at the end.</li>
+  <li>Re-word a few questions, specifically:</li>
+  <li>Make main/most-played questions more explicit (it makes more sense to ask about the last season or two rather than historical data collected over 3+ years – Rein today is not Rein of 2016!)</li>
+</ul>
+
+<h2 id="general-responses">General responses</h2>
+
+<h3 id="q-which-game-modes-do-people-play-the-most">Q: Which game modes do people play the most?</h3>
+
+<p><img src="Analysis_files/Analysis_7_0.png" alt="png" /></p>
+
+<h4 id="notes">Notes</h4>
+<p>Pretty self-explanatory. Roughly 40% of respondents play non-competitive game modes.</p>
+
+<h3 id="q-what-rank-are-they">Q: What rank are they?</h3>
+
+<p><img src="Analysis_files/Analysis_10_0.png" alt="png" /></p>
+
+<h4 id="notes-1">Notes</h4>
+<p>This confirms what I’d expect to see – the members of <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> tend to be higher ranked players compared to the general population. Hero choices and win rates change as players climb the ranks, so this will have a bearing on the answers.</p>
+
+<h3 id="q-what-roles-do-people-play">Q: What roles do people play?</h3>
+
+<p><img src="Analysis_files/Analysis_13_0.png" alt="png" /></p>
+
+<h4 id="notes-2">Notes</h4>
+<p>Respondents were able to select multiple roles. The results are weighted much more towards <code class="highlighter-rouge">Tanks</code> &amp; <code class="highlighter-rouge">Supports</code> than <code class="highlighter-rouge">Damage</code> (aka <code class="highlighter-rouge">DPS</code>), which I wasn’t expecting. This colours the survey results somewhat, so bear that in mind.</p>
+
+<h3 id="q-which-heroes-do-people-main">Q: Which heroes do people main?</h3>
+<p>Rationale: Mains and favourites may well differ. While certain heroes are attractive choices due to their strength or skill curve, people may play a hero in competitive to keep the peace (“don’t choose Torb or I’m staying in spawn!”)</p>
+
+<p><img src="Analysis_files/Analysis_17_0.png" alt="png" /></p>
+
+<h4 id="notes-3">Notes</h4>
+<p>Caveats:</p>
+
+<p>Firstly, the wording of this question was a ambiguous – I didn’t explicitly ask for the highest overall play time in their prefered game mode <em>or</em> the most-played hero over the last season or two. I.e. respondents would’ve anwswered based their interpretation of the question. My hunch is that most people took the question literally and chose their most-played hero, but I can’t be certain.</p>
+
+<p>Secondly, <code class="highlighter-rouge">Damage</code> heroes (aka <code class="highlighter-rouge">DPS</code>) have to compete with many more heroes in their own role, so their playtime is somewhat diluted. E.g. For much of the game’s life, <code class="highlighter-rouge">Ana</code> had to compete with <code class="highlighter-rouge">Lucio</code>, <code class="highlighter-rouge">Mercy</code> and <code class="highlighter-rouge">Zenyatta</code> whereas <code class="highlighter-rouge">Junkrat</code> had to compete with a large cast of damage dealers.</p>
+
+<p>There’s a number of heroes that were released at launch or shortly thereafter that sit low in the responses. That being said, heroes like <code class="highlighter-rouge">Torbjorn</code>, <code class="highlighter-rouge">Symmetra</code> and <code class="highlighter-rouge">Bastion</code> have always been situational.</p>
+
+<h3 id="q-which-heroes-are-our-favourites">Q: Which heroes are our favourites?</h3>
+<p>Rationale: Again, favourites are not equivalent to main heroes. E.g. I used to main <code class="highlighter-rouge">Tracer</code>, but she’s been weak for over a year. <code class="highlighter-rouge">Tracer</code> remains my favourite hero, though.</p>
+
+<p><img src="Analysis_files/Analysis_20_0.png" alt="png" /></p>
+
+<h4 id="notes-4">Notes</h4>
+<h5 id="we-appreciate-many-of-the-older-heroes">We appreciate many of the older heroes</h5>
+<p>Older heroes tend to dominate in the favourite category. <code class="highlighter-rouge">Ana</code> is the runaway favourite; she’s 50% more popular than the next challenger!</p>
+
+<p><code class="highlighter-rouge">Wrecking Ball</code> is the highest placed favourite ‘new’ hero by quite some margin (I’m not including <code class="highlighter-rouge">Ana</code> as a ‘new’ hero as she’s been around forever).</p>
+
+<p>Finally, you can see certain heroes are higher in the pecking order vs. the playtime results. This is to be expected, as while we might love playing a certain hero, it’s not always a viable pick.</p>
+
+<h5 id="brigitte">Brigitte</h5>
+<p>I can’t really avoid mentioning <code class="highlighter-rouge">Brigitte</code>. I’m not sure we can easily interpret this result; players may dislike her for any number of reasons:</p>
+
+<ul>
+  <li>Being forced to pick <code class="highlighter-rouge">Brigitte</code> when she was clearly over-tuned (and this happened for <em>months</em>, even pre-GOATS)</li>
+  <li>Residual hate; <code class="highlighter-rouge">Brigitte</code> destroyed beloved heroes such as <code class="highlighter-rouge">Tracer</code>, <code class="highlighter-rouge">Genji</code> and <code class="highlighter-rouge">Winston</code> while barely breaking a sweat</li>
+  <li>Post-rework, players view <code class="highlighter-rouge">Brigitte</code> as weak</li>
+  <li>Elitism (limited mechanical requirement)</li>
+  <li>People just haven’t warmed to <code class="highlighter-rouge">Brigitte</code></li>
+</ul>
+
+<p>I have a few friends who stomped their way up the ranks as <code class="highlighter-rouge">Brigitte</code> – you’d think that’d count for <em>something</em>?</p>
+
+<h5 id="when-choosing-favourites-metas-not-better">When choosing favourites, meta’s not better</h5>
+<p>It sticks out to see just how low <code class="highlighter-rouge">Orisa</code>, <code class="highlighter-rouge">Reaper</code> &amp; <code class="highlighter-rouge">Mei</code> place. All of these heroes have been viable for months and continued to gain in strength with the introduction of <code class="highlighter-rouge">Sigma</code>. Given that <code class="highlighter-rouge">Orisa</code> is currently meta but remains unpopular, perhaps the developers might consider a re-work of sorts?</p>
+
+<p>Despite a number of heroes being borderline throw picks (<code class="highlighter-rouge">Tracer</code> ever since <code class="highlighter-rouge">Brigitte</code> arrived on the scene) or a form of masochism (<code class="highlighter-rouge">Ana</code> vs. double shield, <code class="highlighter-rouge">Reinhardt</code> into <code class="highlighter-rouge">Mei</code>/<code class="highlighter-rouge">Reaper</code>/<code class="highlighter-rouge">Doomfist</code>), the romantics among us still love these heroes.</p>
+
+<h5 id="the-problem-children">The problem children</h5>
+<p>I’m a little surprised to see <code class="highlighter-rouge">Torbjorn</code>, <code class="highlighter-rouge">Symmetra</code>, <code class="highlighter-rouge">Bastion</code> &amp; <code class="highlighter-rouge">Mei</code> so clearly at the bottom. <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> used to host endless discussions regarding one-tricks ruining the game. Either the reworks to <code class="highlighter-rouge">Torbjorn</code> &amp; co largely fixed the problem, or our survey respondents are a different crowd and don’t play as those heroes.</p>
+
+<p>It’s also odd to see <code class="highlighter-rouge">Soldier: 76</code> ranking so badly, as he does much better under <a href="#Q:-Which-heroes-are-fun-play-as?">Q: Which heroes are fun to play as?</a> My best guess is that he’s an afterthought – while it’s fun to play the ukelele in quiet room, why even bother when there’s a 130dB death metal band drowning you out?</p>
+
+<h2 id="hero-responses">Hero responses</h2>
+
+<h3 id="q-which-heroes-are-fun-play-as">Q: Which heroes are fun play as?</h3>
+
+<p><img src="Analysis_files/Analysis_25_0.png" alt="png" /></p>
+
+<h4 id="notes-5">Notes</h4>
+<p>There’s a few discrepancies vs responses to the above question (<a href="#Q:-Which-heroes-are-our-favourites?">Q: Which heroes are our favourites?</a>), but we can make an educated guess as to why.</p>
+
+<h5 id="oh-egads-my-mercy-is-ruined">Oh, egads! My Mercy is ruined!</h5>
+<p>While <code class="highlighter-rouge">Mercy</code>’s in the top half of respondents’ favourites, she is considered distinctly un-fun to play as for the majority. My guess is that a subset of players <em>really</em> love playing <code class="highlighter-rouge">Mercy</code>, whereas other players are much less thrilled by the prospect. One person’s flying angel is another’s heal-bot. There’s nothing wrong with that – you don’t have to please all of the people all of the time.</p>
+
+<h5 id="orisa-trots-home-in-last-place">Orisa trots home in last place</h5>
+<p>Unfortunately, <code class="highlighter-rouge">Orisa</code> continues to skulk around the bottom. In addition to respondents stating <code class="highlighter-rouge">Orisa</code> is un-fun to play, <code class="highlighter-rouge">Orisa</code> also lacks the niche appeal of <code class="highlighter-rouge">Mercy</code>. I guess what I’m trying to say is that <code class="highlighter-rouge">Orisa</code> is neither mainstream like <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Justin Beiber</a> nor a golden nugget like <a href="https://www.youtube.com/watch?v=iyRzzmjK5_Q&amp;list=PLKl69KbB34_rPmngjlvqpXJa_Sar-aXZL">John Prine</a>. In this analogy, <code class="highlighter-rouge">Orisa</code> is Bunker Muzak.</p>
+
+<h5 id="other-interesting-placings">Other interesting placings</h5>
+<p><code class="highlighter-rouge">Baptiste</code> does considerably better here vs. his favourites result. This suggests <code class="highlighter-rouge">Baptiste</code> is fairly fun to play, but hasn’t quite ousted our comfort picks just yet.</p>
+
+<p>As previously mentioned, <code class="highlighter-rouge">Soldier: 76</code> is still hanging in there, somehow.</p>
+
+<h3 id="q-which-heroes-are-fun-play-against">Q: Which heroes are fun play against?</h3>
+
+<p><img src="Analysis_files/Analysis_28_0.png" alt="png" /></p>
+
+<h4 id="notes-6">Notes</h4>
+<h5 id="most-fun-to-play-against">Most fun to play against</h5>
+
+<p>To start, let’s do a run-down of the Fun to Play Against Gang. They’re nearly all ‘old’ heroes (released with the game plus <code class="highlighter-rouge">Ana</code>). There are a few exceptions which I’ll come to, though.</p>
+
+<ul>
+  <li>On the <code class="highlighter-rouge">Tank</code> front, <code class="highlighter-rouge">Reinhardt</code>, <code class="highlighter-rouge">Winston</code>, <code class="highlighter-rouge">Zarya</code> and <code class="highlighter-rouge">D.va</code> score very well.</li>
+  <li>For <code class="highlighter-rouge">Supports</code>, <code class="highlighter-rouge">Ana</code>, <code class="highlighter-rouge">Zenyatta</code>, <code class="highlighter-rouge">Lucio</code> and <code class="highlighter-rouge">Mercy</code> all feature.</li>
+  <li><code class="highlighter-rouge">Soldier: 76</code>, <code class="highlighter-rouge">McCree</code>, <code class="highlighter-rouge">Genji</code> and <code class="highlighter-rouge">Tracer</code> make up the most fun to play against <code class="highlighter-rouge">DPS</code> crew.</li>
+</ul>
+
+<p>For ‘new’ heroes, <code class="highlighter-rouge">Ashe</code> sneaks into the top 10, and <code class="highlighter-rouge">Wrecking Ball</code> sits dead-centre in the results.</p>
+
+<h5 id="least-fun-to-play-against">Least fun to play against</h5>
+<p>Next, we’ll consider the un-fun crowd. Much of the ‘new’ cast of heroes are perceived to be un-fun (with exceptions).</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Doomfist</code>, <code class="highlighter-rouge">Orisa</code>, <code class="highlighter-rouge">Sombra</code> and <code class="highlighter-rouge">Brigitte</code> are all banished from the Kingdom of Fun.</li>
+  <li>As the least popular fellow by far, <code class="highlighter-rouge">Doomfist</code> is made to face the wall (probably in case he punches your face into it, then animation cancels your funeral).</li>
+  <li><code class="highlighter-rouge">Sigma</code> makes an appearance – the newest hero is the 7th least fun to play against.</li>
+  <li><code class="highlighter-rouge">Wrecking Ball</code> &amp; <code class="highlighter-rouge">Baptiste</code> are decently received, but can’t quite crack the top half.</li>
+</ul>
+
+<p>Overwatch’s older ‘problem children’ remain. I fully expected to see <code class="highlighter-rouge">Symmetra</code>, <code class="highlighter-rouge">Mei</code>, <code class="highlighter-rouge">Bastion</code> and <code class="highlighter-rouge">Widow</code> lurking around the bottom. I’ll come back to some of these fellows in a further question, though.</p>
+
+<p>I had expected to see <code class="highlighter-rouge">Reaper</code> even lower on the fun chart due to his life-steal and other buffs making him an oppressive figure, but he comes in at 10th least fun to play against.</p>
+
+<h5 id="a-brigitte-miracle">A Brigitte miracle</h5>
+<p>Finally, while still placing in the bottom third, the post-rework <code class="highlighter-rouge">Brigitte</code> is approaching mid-table in the fun to play <em>against</em> stakes. For me, this is a borderline miraculous result. A sincere well-done to the devs is in order, as <code class="highlighter-rouge">Brigitte</code> is no longer the enfant terrible of Overwatch.</p>
+
+<h3 id="q-which-heroes-are-more-fun-to-play-as-than-to-play-against">Q: Which heroes are more fun to play as than to play against?</h3>
+<p>Rationale: Optimising for the fun of one player at the expense of 6 others might tell us something about why certain heroes are strongly disliked by the playerbase.</p>
+
+<p>E.g. <code class="highlighter-rouge">Doomfist</code> might be satisfying to play, as it’s rewarding to pull off combos that have high mechanical skill requirements. However, the players on the receiving end may feel helpless and demoralised.</p>
+
+<p>On the other hand, players may enjoy fragging out on <code class="highlighter-rouge">Zen</code>, but this is tempered by <code class="highlighter-rouge">Zen</code>’s sphere-like hitbox &amp; squishy nature.</p>
+
+<p><strong>How to interpret this chart</strong></p>
+
+<p>For each hero, larger values on the x axis (increasing to the right) tell us a particular hero is more fun to play <em>as</em> than to play <em>against</em>. The reverse is also true; smaller values tell us the hero is more fun to play <em>against</em> than to play <em>as</em>.</p>
+
+<p><img src="Analysis_files/Analysis_32_0.png" alt="png" /></p>
+
+<h4 id="notes-7">Notes</h4>
+<h5 id="oh-mercy">Oh Mercy</h5>
+<p><code class="highlighter-rouge">Mercy</code> is the hero that is considered far and away more fun to play <em>against</em> than to play <em>as</em>. This makes a lot of sense when we consider the results of a previous question (see: <a href="#Q:-Which-heroes-are-fun-play-as?">Q:-Which-heroes-are-fun-play-as?</a>) – <code class="highlighter-rouge">Mercy</code> mains aside, most of the playerbase doesn’t enjoy playing <code class="highlighter-rouge">Mercy</code>. Coupled with the fact that <code class="highlighter-rouge">Mercy</code> poses no real threat to most of the cast, this makes a lot of sense (unless you’re Neptuno popping <code class="highlighter-rouge">Valkyrie</code>).</p>
+
+<h5 id="cc--one-shots">CC &amp; one-shots</h5>
+<p>Two thirds of the cast are considered more fun to play <em>as</em> than to play <em>against</em>. It is absolutely no surprise to see many of the following heroes considered to be significantly more fun to play <em>as</em> than to play <em>against</em>:</p>
+<ul>
+  <li><code class="highlighter-rouge">Doomfist</code> (CC &amp; one-shots)</li>
+  <li><code class="highlighter-rouge">Mei</code> (CC &amp; cheerily waving)</li>
+  <li><code class="highlighter-rouge">Sigma</code> (concerning to see him here so quickly, but he has CC &amp; few weaknesses in the double barrier meta)</li>
+  <li><code class="highlighter-rouge">Sombra</code> (CC)</li>
+  <li><code class="highlighter-rouge">Widowmaker</code> (one-shots)</li>
+  <li><code class="highlighter-rouge">Hanzo</code> (one-shots)</li>
+</ul>
+
+<p>… and so on. There seems to be a distinct pattern here – CC &amp; one-shots are fun for the person dishing them out, but less so when the roles are reversed.</p>
+
+<h3 id="q-where-do-heroes-fall-on-the-balance-scale">Q: Where do heroes fall on the balance scale?</h3>
+<p>Rationale: Gives us a feel for heroes that are considered weak/balanced/over-tuned (aka OP). This allows interesting questions to be asked later, too.</p>
+
+<p><img src="Analysis_files/Analysis_37_0.png" alt="png" /></p>
+
+<h4 id="notes-8">Notes</h4>
+<h5 id="the-over-powered">The over-powered</h5>
+<p>All of the meta heroes are accounted for in the OP list (<code class="highlighter-rouge">Orisa</code>, <code class="highlighter-rouge">Sigma</code>, <code class="highlighter-rouge">Doomfist</code> etc.)</p>
+
+<h5 id="the-weak">The weak</h5>
+<p>Similarly, many of the underpowered choices are predictable: <code class="highlighter-rouge">Soldier: 76</code>, <code class="highlighter-rouge">Winston</code>, <code class="highlighter-rouge">D.va</code>, <code class="highlighter-rouge">Genji</code>, <code class="highlighter-rouge">Tracer</code>. We’ve seen many threads on forums about these heroes, so I shan’t dwell on them.</p>
+
+<p>Many of the weak heroes lack burst damage or shields. Even the seemingly meta-proof <code class="highlighter-rouge">D.va</code> is finding things tough.</p>
+
+<h5 id="brigitte-again">Brigitte (again)</h5>
+<p><code class="highlighter-rouge">Brigitte</code> is once again having a rough time. <code class="highlighter-rouge">Brigitte</code> is not only considered un-fun to play <em>as</em> &amp; somewhat un-fun to play <em>against</em>, but she’s also perceived as being incredibly weak. However, the best evidence I have directly contradicts this result: her <a href="https://www.overbuff.com/heroes/brigitte">win rate on overbuff</a> is currently a thumping 57 or 58% – the highest in the game at the moment! Time to hire an image consultant and buy some instagram follows, hen.</p>
+
+<h5 id="sombra-balanced-yet-cant-win">Sombra: balanced, yet can’t win?</h5>
+<p><code class="highlighter-rouge">Sombra</code> is considered to be reasonably strong-ish, but her <a href="https://www.overbuff.com/heroes/sombra">winrate is in the toilet</a> at 43% overall (the worst in the entire game, though it rises to 48% in <code class="highlighter-rouge">Grandmasters</code>). What’s behind the disconnect? Perhaps players find <code class="highlighter-rouge">Sombra</code>’s mere presence oppressive, so they lose sight of the bigger picture?</p>
+
+<p>The new meta combined with global ultimate charge nerfs pushed <code class="highlighter-rouge">Sombra</code> out of contention due to her heavy reliance on <code class="highlighter-rouge">EMP</code>. Either way, it’s worrying that <code class="highlighter-rouge">Sombra</code> can’t buy a win at lower ranks and is still perceived as strong-ish. Perhaps <code class="highlighter-rouge">Sombra</code> is still strong in isolation and will ghost back into contention with a meta change.</p>
+
+<h5 id="reinhardt-mains-should-form-a-support-group">Reinhardt mains should form a support group</h5>
+<p><code class="highlighter-rouge">Reinhardt</code> is amongst the weakest, but this flies in the face of a marginally positive <a href="https://www.overbuff.com/heroes/reinhardt">win rate</a>. I feel this may once again play into how people <em>feel</em> while playing <code class="highlighter-rouge">Reinhardt</code>. He may win more than he loses, but it’s a common complaint that he gets pinballed, punched, hacked, frozen, booped etc. to the point where playing him is a masochistic exercise.</p>
+
+<h3 id="q-which-heroes-are-fun-to-play-against-relative-to-their-perceived-balance">Q: Which heroes are fun to play against relative to their perceived balance?</h3>
+<p>Rationale: I’d expect to see something approaching an inversely proportional relationship between hero strength and fun playing <em>against</em> them (i.e. the more OP a hero is, the less fun it is to play <em>against</em> them).</p>
+
+<p>Are there any weak heroes that significantly buck this trend? If so, it suggests the hero design may have inherent problems.</p>
+
+<p><strong>How is the result calculated?</strong></p>
+
+<p>I’d suggest <a href="https://github.com/marksimpson82/overwatch_survey/blob/35ba66e3f9ef05bcd8804bebfec0c540366c9d3d/overwatch_survey/Analysis.ipynb#L779-L802">reading the code</a> in github, but the basic idea is this:</p>
+
+<ul>
+  <li>Take the playing <em>against</em> un-fun/fun rating and transform it from the range <code class="highlighter-rouge">[1, 5]</code> =&gt; <code class="highlighter-rouge">[-1, 1]</code> (larger values are more fun)</li>
+  <li>Take the balance rating and transform it from the range <code class="highlighter-rouge">[1, 5]</code> =&gt; <code class="highlighter-rouge">[-1, 1]</code> (-1 is weak, 0 is balanced, 1 is strong)</li>
+  <li>Add these two values together.</li>
+</ul>
+
+<p><strong>Possible interpretations</strong></p>
+
+<p>I’d say the negative values are way more interesting.</p>
+
+<ul>
+  <li>If a hero is un-fun <em>and</em> OP, the result will be close to 0
+    <ul>
+      <li>The hero is probably just un-fun due to being OP rather than any inherent design problem. Tuning will resolve it.</li>
+    </ul>
+  </li>
+  <li>If a hero is un-fun <em>and</em> weak, the result will be strongly negative
+    <ul>
+      <li>Not only is the hero weak, but nobody likes them. May suggest a design flaw.</li>
+    </ul>
+  </li>
+  <li>If a hero is fun <em>and</em> balanced, the result will be positive
+    <ul>
+      <li>The hero design is in a great place.</li>
+    </ul>
+  </li>
+  <li>If a hero is fun <em>and</em> OP, the result will be strongly positive
+    <ul>
+      <li>The hero design is in a great place, to the point where they kill us and we say “yes sir, thank you sir”.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="Analysis_files/Analysis_41_0.png" alt="png" /></p>
+
+<h4 id="notes-9">Notes</h4>
+<h5 id="negatives">Negatives</h5>
+<p>Let’s focus on the negative values. Firstly, poor <code class="highlighter-rouge">Brigitte</code> can’t catch a break. I’m going to move on, as I’ve discussed her enough.</p>
+
+<p>The rest of the negatives are pretty much what I expected to see – heroes that are considered to be well-balanced yet un-fun to play against:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">Bastion</code> is a niche pick, kills quickly, has a self-heal, often requires his team to build around him and takes a lot more coordination to stop than to use. I can’t ever recall a teammate saying, “Yay, they’re playing pirate ship!”, either. Even if <code class="highlighter-rouge">Bastion</code> is perceived to be fairly well-balanced, respondents strongly dislike playing against him.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Sombra</code>. Despite the perception of her being well-balanced, her balance/fun ratio is out of sorts. <code class="highlighter-rouge">Sombra</code> appears behind her enemies and silences their abilities. This is especially the case for <code class="highlighter-rouge">Tanks</code> like <code class="highlighter-rouge">Reinhardt</code>, <code class="highlighter-rouge">D.Va</code> and <code class="highlighter-rouge">Wrecking Ball</code> who need the support of their team to survive a successful hack. I suspect the loss of agency &amp; feeling of helplessness makes <code class="highlighter-rouge">Sombra</code> unpopular.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Mei</code> has the most devilish CC in the game and can also capitalise on a lack of coordination (her wall also happens to perfectly fit most choke points and is difficult to break due to its high health and multiple sections).</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Torbjorn</code> has an auto-aiming turret, high burst damage and a spammy area denial ultimate. I’m somewhat surprised to see he’s neck and neck with <code class="highlighter-rouge">Mei</code> and <code class="highlighter-rouge">Symmetra</code>, though. Perhaps people’s dislike for <code class="highlighter-rouge">Torbjorn</code> one-tricks has influenced the voting, or I’m missing something. I’m looking forward to reading your comments.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Symmetra</code> has CC turrets that can surprise, slow &amp; quickly kill squishies, a fight-winning (and visually noisy) ult that is almost indestructible <em>and</em> has received many buffs to her damage &amp; beam. In the current double shield meta, her damage is strong.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Junkrat</code> has a sneaky trap, long-range spam capabilities, two mines and an ult that is strong at lower levels of play.</p>
+  </li>
+</ul>
+
+<h5 id="the-rest">The rest</h5>
+<p><code class="highlighter-rouge">Doomfist</code> is so universally disliked at this point that it’s hard to read much into his negative rating. Blizzard has a formidable task ahead to balance him, as he tends to be useless and niche, or infuriatingly oppressive (especially when played into heroes that rely on their teammates for peel).</p>
+
+<p>The heroes that have the largest positive ratings are our usual motley crew of old heroes: <code class="highlighter-rouge">Ana</code>, <code class="highlighter-rouge">Lucio</code>, <code class="highlighter-rouge">Zenyatta</code> etc. These heroes are well-balanced and score very well in the fun to play against category.</p>
+
+<p>One interpretation of <code class="highlighter-rouge">Sigma</code>’s positive score here (despite being considered one of the most OP heroes in the game) is that his kit is not inherently un-fun to play against – <code class="highlighter-rouge">Sigma</code> may just need his power pared back via small tweaks.</p>
+
+<h2 id="over-to-you">Over to you</h2>
+<p>Thanks again for reading. Have you got any questions or suggestions? I’ll be reading the comments, and I intend to run this survey again sometime in future.</p>
+
+
+    </div>
+  </body>
+</html>

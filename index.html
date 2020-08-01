@@ -1,1 +1,78 @@
-Hello World
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<!-- Created with EditPad Pro & Coffee Cup. -->
+		<!-- With thanks to FriedBunny for fixing a few CSS/HTML Internet Explorer display bugs. -->
+		<title>Mark 'Defrag' Simpson - Game Development Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	
+	<body> 
+		<div id="wrapper">
+			<div id="header">
+				<div id="header-image" title="Mark Simpson">&nbsp;</div>
+				<div class="separator">
+					<div id="header-bottom">
+						<span id="navline">Quick Jump:</span>						
+						<a href="#programming">Programming</a> | 
+						<a href="/blog/">Blog</a>
+					</div> <!-- header-bottom -->
+				</div> <!-- separator -->
+			</div> <!-- header -->
+
+		
+			<div class="content">
+		
+			<p>Employers: <a href="http://careers.stackoverflow.com/mjsimpson">Look here instead.</a><br><br>
+			This website is horrendously out of date and contains my ancient university stuff.  The deferred shading code/write-up still gets a fair amount of downloads so I've kept this page up.  <br><br>Check out my <a href="/blog/">blog</a> for various articles on unit testing, fly-fishing, bongo tutelage and jumpstyle unicycle training.  I may be lying.<br></p>
+					
+			<h3>Summary</h3>
+			<p><b>Name</b>: Mark Simpson<br>
+			<b>Email</b>: MJSimpson (at) gmail dot com.<br>
+			<b>Age</b>: 30<br>
+			<b>Location</b>: Scotland<br>			
+			<b>Wot I do</b>: Software Engineer at <a href="http://www.eegeo.com">eegeo</a><br>
+			<b>Degree</b>: <a href="http://www.abertay.ac.uk/Courses/CDetails.cfm?CID=185" target="_blank">Computer Games Technology BSc</a> with first class honours<br><br>
+			
+			<br>
+			</p>	
+
+			</div> <!-- content -->
+			<div class="separator">
+				<p class="separatorText"><a name="programming">Programming</a></p>
+			</div> <!-- separator -->
+
+			<div class="content">
+				<p><b>Please note that to run the applications, you may need to download <a href="http://homepages.nildram.co.uk/~msimp2k2/files/d3dx9_34.rar">d3dx_34.dll</a>.  Unrar the .dll to your windows/system32 folder, or place it in the same folder as the .exe that is asking for it</b>.</p>
+				<p>Deferred Shading.  This was created as part of my honours project which comparatively evaluated deferred shading with multi-pass forward shading.  The application features multiple pass forward shading and deferred shading renderers.  It also features some basic scene & light culling, lighting sets (for the forward shading renderer), shadow sets, shadow mapping support for directional and spot lights and... more stuff.  Some of the static meshes & textures in the scenes were created by other people; these are credited in the readme.</p>
+				<p>I received straight As for the planning, managing and execution of the project.  The project was also recommended by the course leader for further dissemination.</p>	
+				<p><b>System Requirements</b>: Due to utilising the vPos register, you need a shader model 3.0 card to run this application.  It also uses depth stencil surfaces for shadow mapping, so it may not run on ATI-based cards.</p>
+				<p>Downloads: <a href="http://www.freefilehosting.net/deferredexecutablemarksimpson">Executable</a> | <a href="files/deferred_source_mark_simpson.rar">Source</a> | <a href="files/deferred_dissertation_mark_simpson.doc">Dissertation</a></p>
+				<center><table class="generictable">
+					<tr><!-- Row 1 -->
+
+						<td class="genericCell"><a href="images/programs/deferred_01.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_01.jpg" alt="deferred shading; mixture of omni, spot and directional lights"></a></td><!-- Col 1 -->
+						<td class="genericCell"><a href="images/programs/deferred_02.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_02.jpg" alt="deferred shading; omni lighting"></a></td><!-- Col 2 -->
+						<td class="genericCell"><a href="images/programs/deferred_03.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_03.jpg" alt="deferred shading; visualisation of screen space light coverage. Overhead lighting has self-illumination"></a></td><!-- Col 3 -->
+						<td class="genericCell"><a href="images/programs/deferred_04.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_04.jpg" alt="deferred shading; visualisation of G-Buffer & Framebuffer"></a></td><!-- Col 4 -->
+					</tr>
+				</table></center>
+				<hr>
+
+				<p>Terrain Generation.  This was a third year deliverable for university but I've re-written it to work with Direct3D instead of OpenGL.  The application dynamically generates new terrain features using a number of common techniques, calculates the vertex normals and, finally, calcuates a blend map based on either height or steepness of slope.  This blend map is used to interpolate between two textures to make the terrain's appearance more interesting.  Terrain can be loaded from and saved to a .raw heightmap.  The application also features refractive, reflective water with depth modulation and a simplified Fresnel term; the water also uses alpha blending to smoothly fade out the water plane as it intersects the shoreline.</p>	
+				<p><b>System Requirements</b>: Graphics card with shader model 2.0 capabilities.</p>
+
+				<p>Downloads: <a href="files/terrain_executable_mark_simpson.rar">Executable</a> | <a href="files/terrain_source_mark_simpson.rar">Source</a></p>
+
+				<center><table class="generictable">
+					<tr><!-- Row 1 -->
+						<td class="genericCell"><a href="images/programs/terrain_01.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/terrain_01.jpg" alt="Water & Terrain"></a></td><!-- Col 1 -->
+						<td class="genericCell"><a href="images/programs/terrain_02.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/terrain_02.jpg" alt="Edge fading, Fresnel & terrain texture blending in action"></a></td><!-- Col 2 -->						
+					</tr>
+				</table></center>
+				<hr>				
+		</div> <!-- wrapper --> 
+	
+	</body>
+</html>
+

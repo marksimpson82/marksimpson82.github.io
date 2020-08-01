@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss"
+	],
+	"sourcesContent": [
+		".content {\n  max-width: 800px;\n  margin: auto;\n  padding: 10px;\n}\n\nh1, h2, h3, h4, h5 {\n   font-weight: bold;\n}\n\nh1 { font-size: 2em; }\nh2 { font-size: 1.3em; }\nh3 { font-size: 1.2em; }\nh4 { font-size: 1.1em; }\nh5 { font-size: 1em; }\nh6 { font-size: 0.7em; }\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,QAAQ,CAAC,EACP,SAAS,EAAE,KAAK,EAChB,MAAM,EAAE,IAAI,EACZ,OAAO,EAAE,IAAI,GACd;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EAChB,WAAW,EAAE,IAAI,GACnB;;AAED,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,GAAG,GAAI;;AACvB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,KAAK,GAAI;;AACzB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,KAAK,GAAI;;AACzB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,KAAK,GAAI;;AACzB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,GAAG,GAAI;;AACvB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,KAAK,GAAI"
+}
