@@ -1,78 +1,158 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-	<head>
-		<!-- Created with EditPad Pro & Coffee Cup. -->
-		<!-- With thanks to FriedBunny for fixing a few CSS/HTML Internet Explorer display bugs. -->
-		<title>Mark 'Defrag' Simpson - Game Development Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-	</head>
-	
-	<body> 
-		<div id="wrapper">
-			<div id="header">
-				<div id="header-image" title="Mark Simpson">&nbsp;</div>
-				<div class="separator">
-					<div id="header-bottom">
-						<span id="navline">Quick Jump:</span>						
-						<a href="#programming">Programming</a> | 
-						<a href="/blog/">Blog</a>
-					</div> <!-- header-bottom -->
-				</div> <!-- separator -->
-			</div> <!-- header -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+	<title>Mark Simpson &ndash; Senior Software Engineer</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+	<link rel="stylesheet" href="css/side-menu.css">
+</head>
+<body>
 
-		
-			<div class="content">
-		
-			<p>Employers: <a href="http://careers.stackoverflow.com/mjsimpson">Look here instead.</a><br><br>
-			This website is horrendously out of date and contains my ancient university stuff.  The deferred shading code/write-up still gets a fair amount of downloads so I've kept this page up.  <br><br>Check out my <a href="/blog/">blog</a> for various articles on unit testing, fly-fishing, bongo tutelage and jumpstyle unicycle training.  I may be lying.<br></p>
-					
-			<h3>Summary</h3>
-			<p><b>Name</b>: Mark Simpson<br>
-			<b>Email</b>: MJSimpson (at) gmail dot com.<br>
-			<b>Age</b>: 30<br>
-			<b>Location</b>: Scotland<br>			
-			<b>Wot I do</b>: Software Engineer at <a href="http://www.eegeo.com">eegeo</a><br>
-			<b>Degree</b>: <a href="http://www.abertay.ac.uk/Courses/CDetails.cfm?CID=185" target="_blank">Computer Games Technology BSc</a> with first class honours<br><br>
-			
-			<br>
-			</p>	
+<div id="layout">
+    <div id="main">
+        <div class="header">
+            <h1>Mark Simpson</h1>
+            <h2>Senior Software Engineer</h2>
+        </div>
 
-			</div> <!-- content -->
-			<div class="separator">
-				<p class="separatorText"><a name="programming">Programming</a></p>
-			</div> <!-- separator -->
+        <hr>
 
-			<div class="content">
-				<p><b>Please note that to run the applications, you may need to download <a href="http://homepages.nildram.co.uk/~msimp2k2/files/d3dx9_34.rar">d3dx_34.dll</a>.  Unrar the .dll to your windows/system32 folder, or place it in the same folder as the .exe that is asking for it</b>.</p>
-				<p>Deferred Shading.  This was created as part of my honours project which comparatively evaluated deferred shading with multi-pass forward shading.  The application features multiple pass forward shading and deferred shading renderers.  It also features some basic scene & light culling, lighting sets (for the forward shading renderer), shadow sets, shadow mapping support for directional and spot lights and... more stuff.  Some of the static meshes & textures in the scenes were created by other people; these are credited in the readme.</p>
-				<p>I received straight As for the planning, managing and execution of the project.  The project was also recommended by the course leader for further dissemination.</p>	
-				<p><b>System Requirements</b>: Due to utilising the vPos register, you need a shader model 3.0 card to run this application.  It also uses depth stencil surfaces for shadow mapping, so it may not run on ATI-based cards.</p>
-				<p>Downloads: <a href="http://www.freefilehosting.net/deferredexecutablemarksimpson">Executable</a> | <a href="files/deferred_source_mark_simpson.rar">Source</a> | <a href="files/deferred_dissertation_mark_simpson.doc">Dissertation</a></p>
-				<center><table class="generictable">
-					<tr><!-- Row 1 -->
+        <div class="content">
 
-						<td class="genericCell"><a href="images/programs/deferred_01.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_01.jpg" alt="deferred shading; mixture of omni, spot and directional lights"></a></td><!-- Col 1 -->
-						<td class="genericCell"><a href="images/programs/deferred_02.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_02.jpg" alt="deferred shading; omni lighting"></a></td><!-- Col 2 -->
-						<td class="genericCell"><a href="images/programs/deferred_03.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_03.jpg" alt="deferred shading; visualisation of screen space light coverage. Overhead lighting has self-illumination"></a></td><!-- Col 3 -->
-						<td class="genericCell"><a href="images/programs/deferred_04.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/deferred_04.jpg" alt="deferred shading; visualisation of G-Buffer & Framebuffer"></a></td><!-- Col 4 -->
-					</tr>
-				</table></center>
-				<hr>
+            <div class="content-inner">
+                <h2 class="content-subhead">About Me</h2>
+                <p>I started out in development by modding games, became somewhat obsessed with automated testing and have a wealth of experience in building 3D worlds & services across multiple platforms.</p>
+                <p>Over the last decade, I've worked in diverse areas including:</p>
+                <ul>
+                    <li>
+                        <div class="tooltip">Automated testing
+                            <span class="tooltiptext">
+                                C++, Python, C#, NUnit, RSpec, gtest, unittest, Postman
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">A cross-platform desktop/web/mobile client
+                            <span class="tooltiptext">
+                                C, C++ plus bindings in various languages
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">Generation of large-scale 3D worlds from GIS data
+                            <span class="tooltiptext">
+                                AWS EMR, Python, C#
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">Spatial partitioning & resource streaming
+                            <span class="tooltiptext">
+                                Python, C#, C++, AWS S3 & Cloudfront
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">Analytics pipelines and reporting
+                            <span class="tooltiptext">
+                                Hadoop, Pig, Redash, AWS EMR, Redshift, Data Pipeline
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">Deploying, running and monitoring web services
+                            <span class="tooltiptext">
+                                Ruby, Docker, Packer, Heroku, Server Density, AWS EC2
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">Developer support & documentation
+                            <span class="tooltiptext">
+                                HTML, CSS, Jekyll
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <p>Links:</p>
+                <ul>
+                    <li><a href="files/mark_simpson_cv.pdf">CV</a></li>
+					<li><a href="blog">Blog</a></li>
+                    <li><a href="https://www.linkedin.com/in/mark-simpson-2a8155b/">LinkedIn</a></li>
+                    <li><a href="https://stackoverflow.com/users/83891/mark-simpson">Stackoverflow</a></li>
+                    <li><a href="https://defragdev.com/blog/?p=692">The fundamentals of unit testing (series)</a></li>
+                </ul>
+            </div>
 
-				<p>Terrain Generation.  This was a third year deliverable for university but I've re-written it to work with Direct3D instead of OpenGL.  The application dynamically generates new terrain features using a number of common techniques, calculates the vertex normals and, finally, calcuates a blend map based on either height or steepness of slope.  This blend map is used to interpolate between two textures to make the terrain's appearance more interesting.  Terrain can be loaded from and saved to a .raw heightmap.  The application also features refractive, reflective water with depth modulation and a simplified Fresnel term; the water also uses alpha blending to smoothly fade out the water plane as it intersects the shoreline.</p>	
-				<p><b>System Requirements</b>: Graphics card with shader model 2.0 capabilities.</p>
+            <hr>
 
-				<p>Downloads: <a href="files/terrain_executable_mark_simpson.rar">Executable</a> | <a href="files/terrain_source_mark_simpson.rar">Source</a></p>
+             <div class="content-inner">
+                <h2 class="content-subhead">Are you hiring?</h2>
+                <p>I'm currently on the lookout for a job, preferably near Dundee, Scotland.
+                   I'd prefer to work with a variety of technologies and the more interesting the problem, the better.</p>
+                <p>Remote work is fine, but I'd prefer a mixture of office/remote working once it's safe to do so.</p>
+            </div>
 
-				<center><table class="generictable">
-					<tr><!-- Row 1 -->
-						<td class="genericCell"><a href="images/programs/terrain_01.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/terrain_01.jpg" alt="Water & Terrain"></a></td><!-- Col 1 -->
-						<td class="genericCell"><a href="images/programs/terrain_02.jpg" target="_blank"><img class="genericImage" src="images/programs/thumbs/terrain_02.jpg" alt="Edge fading, Fresnel & terrain texture blending in action"></a></td><!-- Col 2 -->						
-					</tr>
-				</table></center>
-				<hr>				
-		</div> <!-- wrapper --> 
-	
-	</body>
+            <hr>
+
+            <div class="content-inner">
+                <h2 class="content-subhead">Skills</h2>
+                <p>For the full picture, please download my <a href="files/mark_simpson_cv.pdf">CV</a></p>
+
+                <h3>Programming Languages</h3>
+                <p>Python, C#, C++, Ruby, JavaScript, Bash & Windows Batch.</p>
+
+                <h3>Operating Systems / Dev Platforms</h3>
+                <p>Windows, MacOS, Linux (mostly Ubuntu & Amazon Linux), iOS, Android, WebGL</p>
+
+
+            </div>
+
+            <hr>
+
+            <div class="content-inner">
+                <h2 class="content-subhead">Project: Overwatch Survey</h2>
+				<p>A survey for the players of <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> to gather opinions on the state of the game. The survey was implemented using Google Forms, then processed using <a href="https://www.python.org/">Python</a> & <a href="https://pandas.pydata.org/">Pandas</a> along with <a href="https://jupyter.org/">Jupyter Notebook</a>.</p>
+                <p>Links: <a href="https://defragdev.com/overwatch_surveys/2019_09/">Article</a> | <a href="blog/2019/10/17/jupyter-notebook-to-cleanish-html.html">Blog</a> | <a href="https://github.com/marksimpson82/overwatch_survey">Github Repo</a></p>
+            </div>
+
+            <hr>
+
+            <div class="content-inner">
+                <h2 class="content-subhead">Uni Project: Deferred Shading Dissertation</h2>
+				<p>While this is an archaic university project from ~2006, it still gets a fair amount of downloads, so I'm keeping it up.</p>
+                <p>Links: <a href="https://github.com/marksimpson82/deferred_shading_2007">Github Repo</a></p>
+
+                <div class="pure-g">
+                <div class="pure-u-1-4">
+					<a href="images/deferred_01.jpg">
+						<img class="pure-img-responsive" src="images/thumbs/deferred_01.jpg" alt="Deferred shading: main scene">
+					</a>
+                </div>
+                <div class="pure-u-1-4">
+					<a href="images/deferred_02.jpg">
+						<img class="pure-img-responsive" src="images/thumbs/deferred_02.jpg" alt="Deferred shading: close-up">
+					</a>
+                </div>
+                <div class="pure-u-1-4">
+					<a href="images/deferred_03.jpg">
+						<img class="pure-img-responsive" src="images/thumbs/deferred_03.jpg" alt="Deferred shading: lighting geometry">
+					</a>
+                </div>
+                <div class="pure-u-1-4">
+					<a href="images/deferred_04.jpg">
+						<img class="pure-img-responsive" src="images/thumbs/deferred_04.jpg" alt="Deferred shading: GBuffer">
+					</a>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
-
