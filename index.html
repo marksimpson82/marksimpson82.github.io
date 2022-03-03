@@ -7,6 +7,24 @@
 	<title>Mark Simpson &ndash; Senior Software Engineer</title>
     <link rel="stylesheet" href="css/pure-min.css">
 	<link rel="stylesheet" href="css/side-menu.css">
+	<style>
+		details > summary {
+			background-color: #fff;
+			cursor: pointer;
+			padding: .5rem .5rem;
+		}
+		
+		details {
+			background: #eee;
+			margin-bottom: .5rem;
+			padding: .5rem .5rem;
+		}
+		
+		details > div {		  
+		  margin-top: 0;
+		  padding: .5rem;
+		}
+	</style>
 </head>
 <body>
 
@@ -25,57 +43,52 @@
                 <h2 class="content-subhead">About Me</h2>
                 <p>I started out in development by modding games, became somewhat obsessed with automated testing and have a wealth of experience in building 3D worlds & services across multiple platforms.</p>
                 <p>Over the last decade, I've worked in diverse areas including:</p>
-                <ul>
-                    <li>
-                        <div class="tooltip">Automated testing
-                            <span class="tooltiptext">
-                                C++, Python, C#, NUnit, RSpec, gtest, unittest, Postman
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">A cross-platform desktop/web/mobile client
-                            <span class="tooltiptext">
-                                C, C++ plus bindings in various languages
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">Generation of large-scale 3D worlds from GIS data
-                            <span class="tooltiptext">
-                                AWS EMR, Python, C#
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">Spatial partitioning & resource streaming
-                            <span class="tooltiptext">
-                                Python, C#, C++, AWS S3 & Cloudfront
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">Analytics pipelines and reporting
-                            <span class="tooltiptext">
-                                Hadoop, Pig, Redash, AWS EMR, Redshift, Data Pipeline
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">Deploying, running and monitoring web services
-                            <span class="tooltiptext">
-                                Ruby, Docker, Packer, Heroku, Server Density, AWS EC2
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tooltip">Developer support & documentation
-                            <span class="tooltiptext">
-                                HTML, CSS, Jekyll
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+				
+				<details>
+					<summary>Automated testing</summary>
+					<div>
+						<p>C++, Python, C#, NUnit, RSpec, gtest, unittest, Postman</p>
+					</div>
+				</details>
+				<details>
+					<summary>A cross-platform desktop/web/mobile client</summary>
+					<div>
+						<p>C, C++ plus bindings in various languages</p>
+					</div>
+				</details>
+                <details>
+					<summary>Generation of large-scale 3D worlds from GIS data</summary>
+					<div>
+						<p>AWS EMR, Python, C#</p>
+					</div>
+				</details>
+                <details>
+					<summary>Spatial partitioning & resource streaming</summary>
+					<div>
+						<p>Python, C#, C++, AWS S3 & Cloudfront</p>                        
+					</div>
+				</details>
+				<details>
+					<summary>Analytics pipelines and reporting</summary>
+					<div>
+						<p>Hadoop, Pig, Redash, AWS EMR, Redshift, Data Pipeline</p>
+					</div>
+				</details>
+				<details>
+					<summary>Deploying, running and monitoring web services</summary>
+					<div>
+						<p>Ruby, Docker, Packer, Heroku, Server Density, AWS EC2</p>
+					</div>
+				</details>
+				<details>
+					<summary>Developer support & documentation</summary>
+					<div>
+						<p>HTML, CSS, Jekyll 
+						
+						<br><br>(though as you can tell from this marvel of a website, I'm not exactly Mr. CSS Zen Garden)</p>
+					</div>
+				</details>		
+		
                 <p>Links:</p>
                 <ul>
                     <li><a href="files/mark_simpson_cv.pdf">CV</a></li>
