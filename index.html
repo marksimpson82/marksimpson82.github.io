@@ -1,162 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-	<title>Mark Simpson &ndash; Senior Software Engineer</title>
-    <link rel="stylesheet" href="css/pure-min.css">
-	<link rel="stylesheet" href="css/side-menu.css">
-	<style>
-		details > summary {
-			background-color: #fff;
-			cursor: pointer;
-			padding: .5rem .5rem;
-		}
-		
-		details {
-			background: #eee;
-			margin-bottom: .5rem;
-			padding: .5rem .5rem;
-		}
-		
-		details > div {		  
-		  margin-top: 0;
-		  padding: .5rem;
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mark Simpson - Senior Software Engineer portfolio">
+  <title>Mark Simpson - Senior Software Engineer</title>
+  <link rel="stylesheet" href="css/new.css">
 </head>
 <body>
-
-<div id="layout">
-    <div id="main">
-        <div class="header">
-            <h1>Mark Simpson</h1>
-            <h2>Senior Software Engineer</h2>
-        </div>
-
-        <hr>
-
-        <div class="content">
-
-            <div class="content-inner">
-                <h2 class="content-subhead">About Me</h2>
-                <p>I started out in development by modding games, became somewhat obsessed with automated testing and have a wealth of experience in building 3D worlds & services across multiple platforms.</p>
-                <p>Over the last decade, I've worked in diverse areas including:</p>
-				
-				<details>
-					<summary>Automated testing</summary>
-					<div>
-						<p>C++, Python, C#, NUnit, RSpec, gtest, unittest, Postman</p>
-					</div>
-				</details>
-				<details>
-					<summary>A cross-platform desktop/web/mobile client</summary>
-					<div>
-						<p>C, C++ plus bindings in various languages</p>
-					</div>
-				</details>
-                <details>
-					<summary>Generation of large-scale 3D worlds from GIS data</summary>
-					<div>
-						<p>AWS EMR, Python, C#</p>
-					</div>
-				</details>
-                <details>
-					<summary>Spatial partitioning & resource streaming</summary>
-					<div>
-						<p>Python, C#, C++, AWS S3 & Cloudfront</p>                        
-					</div>
-				</details>
-				<details>
-					<summary>Analytics pipelines and reporting</summary>
-					<div>
-						<p>Hadoop, Pig, Redash, AWS EMR, Redshift, Data Pipeline</p>
-					</div>
-				</details>
-				<details>
-					<summary>Deploying, running and monitoring web services</summary>
-					<div>
-						<p>Ruby, Docker, Packer, Heroku, Server Density, AWS EC2</p>
-					</div>
-				</details>
-				<details>
-					<summary>Developer support & documentation</summary>
-					<div>
-						<p>HTML, CSS, Jekyll 
-						
-						<br><br>(though as you can tell from this marvel of a website, I'm not exactly Mr. CSS Zen Garden)</p>
-					</div>
-				</details>		
-		
-                <p>Links:</p>
-                <ul>
-                    <li><a href="files/mark_simpson_cv.pdf">CV</a></li>
-					<li><a href="blog">Blog</a></li>
-                    <li><a href="https://www.linkedin.com/in/mark-simpson-2a8155b/">LinkedIn</a></li>
-                    <li><a href="https://stackoverflow.com/users/83891/mark-simpson">Stackoverflow</a></li>
-                    <li><a href="blog/2012/10/24/the-fundamentals-of-automated-testing-series">The fundamentals of unit testing (series)</a></li>
-                </ul>
-            </div>
-            
-            <hr>
-
-            <div class="content-inner">
-                <h2 class="content-subhead">Skills</h2>
-                <p>For the full picture, please download my <a href="files/mark_simpson_cv.pdf">CV</a></p>
-
-                <h3>Programming Languages</h3>
-                <p>Python, C#, C++, Ruby, JavaScript, Bash & Windows Batch.</p>
-
-                <h3>Operating Systems / Dev Platforms</h3>
-                <p>Windows, MacOS, Linux (mostly Ubuntu & Amazon Linux), iOS, Android, WebGL</p>
-
-
-            </div>
-
-            <hr>
-
-            <div class="content-inner">
-                <h2 class="content-subhead">Project: Overwatch Survey</h2>
-				<p>A survey for the players of <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> to gather opinions on the state of the game. The survey was implemented using Google Forms, then processed using <a href="https://www.python.org/">Python</a> & <a href="https://pandas.pydata.org/">Pandas</a> along with <a href="https://jupyter.org/">Jupyter Notebook</a>.</p>
-                <p>Links: <a href="overwatch_surveys/2019_09/">Article</a> | <a href="blog/2019/10/17/jupyter-notebook-to-cleanish-html.html">Blog</a> | <a href="https://github.com/marksimpson82/overwatch_survey">Github Repo</a></p>
-            </div>
-
-            <hr>
-
-            <div class="content-inner">
-                <h2 class="content-subhead">Uni Project: Deferred Shading Dissertation</h2>
-				<p>While this is an archaic university project from ~2006, it still gets a fair amount of downloads, so I'm keeping it up.</p>
-                <p>Links: <a href="https://github.com/marksimpson82/deferred_shading_2007">Github Repo</a></p>
-
-                <div class="pure-g">
-                <div class="pure-u-1-4">
-					<a href="images/deferred_01.jpg">
-						<img class="pure-img-responsive" src="images/thumbs/deferred_01.jpg" alt="Deferred shading: main scene">
-					</a>
-                </div>
-                <div class="pure-u-1-4">
-					<a href="images/deferred_02.jpg">
-						<img class="pure-img-responsive" src="images/thumbs/deferred_02.jpg" alt="Deferred shading: close-up">
-					</a>
-                </div>
-                <div class="pure-u-1-4">
-					<a href="images/deferred_03.jpg">
-						<img class="pure-img-responsive" src="images/thumbs/deferred_03.jpg" alt="Deferred shading: lighting geometry">
-					</a>
-                </div>
-                <div class="pure-u-1-4">
-					<a href="images/deferred_04.jpg">
-						<img class="pure-img-responsive" src="images/thumbs/deferred_04.jpg" alt="Deferred shading: GBuffer">
-					</a>
-                </div>
-            </div>
-            </div>
-
-
-        </div>
+  <header>
+    <div class="container">
+      <h1>Mark Simpson</h1>
+      <h2>Senior Software Engineer</h2>
     </div>
-</div>
+  </header>
 
+  <div class="container">
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <p>I started out in development by modding games, became somewhat obsessed with automated testing and have a wealth of experience in building 3D worlds & services across multiple platforms.</p>
+      <p>Over the last decade, I've worked in diverse areas including:</p>
+      
+      <details>
+        <summary>Automated testing</summary>
+        <div>
+          <p>C++/gtest, Python/pytest, C#/NUnit, Java/JUnit/Spring Boot, Ruby/RSpec, Postman/Bruno</p>
+          <p>I'm also experienced in testing microservices, integration testing, building/customising frameworks for specific use-cases etc.</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Cross-platform desktop/web/mobile clients</summary>
+        <div>
+          <p>C, C++ plus bindings in various languages (e.g. ObjC for iOS, Java/JNI for Android, JavaScript for WebGL)</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Generation of large-scale 3D worlds from GIS data</summary>
+        <div>
+          <p>Full resource build from raw GIS data. AWS EMR, Python with GDAL, C#, visualisation with QGIS</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Spatial partitioning & resource streaming</summary>
+        <div>
+          <p>Morton ordering, Level of Detail (LOD) generation, binary-packed resources. Python, C#, C++, AWS S3 & Cloudfront</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Analytics pipelines and reporting</summary>
+        <div>
+          <p>Took an old AWS Data Pipeline solution and modernised it. Hadoop, Pig, Redash, AWS EMR, Redshift</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Deploying, running and monitoring web services</summary>
+        <div>
+          <p>Ruby, Docker, Packer, Heroku, Server Density, AWS EC2</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>Developer support & documentation</summary>
+        <div>
+          <p>HTML, CSS, Jekyll</p>
+          <p>(though as you can tell from this marvel of a website, I'm not exactly Mr. CSS Zen Garden)</p>
+        </div>
+      </details>
+    </section>
+    
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <p>For the full picture, please download my <a href="files/mark_simpson_cv.pdf">CV</a></p>
+      
+      <div class="skills">
+        <div>
+          <h3>Programming Languages</h3>
+          <p>Python, C#, C++, Ruby, JavaScript, Java, Go, Bash & Windows Batch / PowerShell.</p>
+        </div>
+
+        <div>
+            <h3>Cloud Platforms</h3>
+            <p>Primarily AWS. Also a bit of Azure (as a treat).</p>
+        </div>
+        
+        <div>
+          <h3>Operating Systems / Dev Platforms</h3>
+          <p>Windows, MacOS, Linux (mostly Ubuntu & Amazon Linux). I'm also familiar with Docker and have developed for iOS, Android & WebGL</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Links</h2>
+        <div class="links">
+            <a href="files/mark_simpson_cv.pdf">CV</a>
+            <a href="blog">Blog</a>
+            <a href="https://www.linkedin.com/in/mark-simpson-2a8155b/">LinkedIn</a>
+            <a href="https://stackoverflow.com/users/83891/mark-simpson">Stack Overflow</a>
+            <a href="blog/2012/10/24/the-fundamentals-of-automated-testing-series">Unit Testing Series</a>
+          </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="project">
+        <h3>Overwatch Survey</h3>
+        <p>A survey for the players of <a href="https://reddit.com/r/competitiveoverwatch">/r/cow</a> to gather opinions on the state of the game. The survey was implemented using Google Forms, then processed using <a href="https://www.python.org/">Python</a> & <a href="https://pandas.pydata.org/">Pandas</a> along with <a href="https://jupyter.org/">Jupyter Notebook</a>.</p>
+        <div class="project-links">
+          <a href="overwatch_surveys/2019_09/">Article</a> |
+          <a href="blog/2019/10/17/jupyter-notebook-to-cleanish-html.html">Blog</a> |
+          <a href="https://github.com/marksimpson82/overwatch_survey">Github</a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <h3>Deferred Shading Dissertation</h3>
+        <p>While this is an archaic university project from ~2006, it still gets a fair amount of downloads, so I'm keeping it up.</p>
+        <div class="project-links">
+          <a href="https://github.com/marksimpson82/deferred_shading_2007">Github</a>
+        </div>
+        
+        <div class="gallery">
+          <a href="images/deferred_01.jpg">
+            <img src="images/thumbs/deferred_01.jpg" alt="Deferred shading: main scene">
+          </a>
+          <a href="images/deferred_02.jpg">
+            <img src="images/thumbs/deferred_02.jpg" alt="Deferred shading: close-up">
+          </a>
+          <a href="images/deferred_03.jpg">
+            <img src="images/thumbs/deferred_03.jpg" alt="Deferred shading: lighting geometry">
+          </a>
+          <a href="images/deferred_04.jpg">
+            <img src="images/thumbs/deferred_04.jpg" alt="Deferred shading: GBuffer">
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

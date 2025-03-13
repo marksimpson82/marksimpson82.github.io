@@ -1,0 +1,169 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --light: #ecf0f1;
+    --dark: #34495e;
+    --text: #333;
+    --accent: #e74c3c;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: var(--accent);
+  }
+  
+  details {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  summary {
+    padding: 0.75rem 1rem;
+    background: white;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  summary:hover {
+    background: var(--light);
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  details > div {
+    padding: 1rem;
+    background: white;
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .links a {
+    background: var(--secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .links a:hover {
+    background: var(--accent);
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skills h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+  }
+  
+  .project {
+    margin-bottom: 2rem;
+  }
+  
+  .project-links {
+    margin: 1rem 0;
+  }
+  
+  .project-links a {
+    margin-right: 1rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
